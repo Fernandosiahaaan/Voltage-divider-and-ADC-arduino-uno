@@ -10,8 +10,6 @@ void setup()
 {
   pinMode(A0, INPUT);
   pinMode(A1, INPUT);
-  Serial.begin(9600);
-
   pinMode(8, OUTPUT);
   pinMode(9, OUTPUT);
   pinMode(10, OUTPUT);
@@ -23,17 +21,19 @@ void loop()
   tombol1 = analogRead(A1);
   if (tombol1 == 511) {
     digitalWrite(8, HIGH);
-    delay(500); // Wait for 500 millisecond(s)
+    delay(5000); // Wait for 5000 millisecond(s)
   } else {
     digitalWrite(8, LOW);
   }
   if (tombol1 == 341) {
     digitalWrite(9, HIGH);
+    delay(5000); // Wait for 5000 millisecond(s)
   } else {
     digitalWrite(9, LOW);
   }
   if (tombol1 == 256) {
     digitalWrite(10, HIGH);
+    delay(5000); // Wait for 5000 millisecond(s)
   } else {
     digitalWrite(10, LOW);
   }
