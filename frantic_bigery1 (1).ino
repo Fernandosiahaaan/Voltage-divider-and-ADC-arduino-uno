@@ -22,8 +22,6 @@ void loop()
   led = analogRead(A0);
   tombol1 = analogRead(A1);
   if (tombol1 == 511) {
-    Serial.println(tombol1);
-    Serial.println(((tombol1 * 5) / 1023));
     digitalWrite(8, HIGH);
     delay(500); // Wait for 500 millisecond(s)
   } else {
